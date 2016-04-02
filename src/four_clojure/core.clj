@@ -10,6 +10,7 @@
   28 "(fn f [x] (mapcat #(if (coll? %) (f %) (list %)) x))"
   29 "(fn [x] (apply str (filter #(Character/isUpperCase %) x)))"
   30 "(fn f [x] (cons (first x) (map last (filter #(not= (first %) (last %)) (partition 2 1 x)))))"
+  31 "#(partition-by identity %)"
   32 "mapcat #(vector % %)"
   ))
   (println "\n === Solutions for 4Clojure problems: === \n")
