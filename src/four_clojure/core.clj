@@ -12,6 +12,7 @@
   30 "(fn f [x] (cons (first x) (map last (filter #(not= (first %) (last %)) (partition 2 1 x)))))"
   31 "#(partition-by identity %)"
   32 "mapcat #(vector % %)"
+  33 "(fn [x, y] (mapcat #(repeat y %) x))"
   ))
   (println "\n === Solutions for 4Clojure problems: === \n")
   (println (map #(str "\n" (key %) ": " (solutions (key %)) "\n") solutions))
