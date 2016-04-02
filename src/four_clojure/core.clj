@@ -13,6 +13,7 @@
   31 "#(partition-by identity %)"
   32 "mapcat #(vector % %)"
   33 "(fn [x, y] (mapcat #(repeat y %) x))"
+  34 "#(take (- %2 %1) (iterate inc %1))"
   ))
   (println "\n === Solutions for 4Clojure problems: === \n")
   (println (map #(str "\n" (key %) ": " (solutions (key %)) "\n") solutions))
